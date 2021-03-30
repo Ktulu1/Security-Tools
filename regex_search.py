@@ -25,7 +25,7 @@ with open (filename, 'rt') as searchfile:                   # open searchfile, k
 
 clear_screen()
 
-for results in text:                                        # loop "results" in list "text"
+for results in text:                                        # loop list "text" into results
     print("Line", str(results[0]), ": " + results[1])       # print "results" with line numbers
 
 

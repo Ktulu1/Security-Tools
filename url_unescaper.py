@@ -24,7 +24,7 @@ with open (filename, 'rt') as file:                         # open file for read
 
 clear_screen()
 
-for results in text:                                        # loop "results" into list "text"
+for results in text:                                        # loop list "text" into "results"
     print(str(results))                                     # print "results"
 
 
