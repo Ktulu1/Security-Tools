@@ -1,9 +1,17 @@
+#decodes destination url in a bing search result
+#command line argument is bing search results in quotes
+
 import urllib.parse
 import base64
+from sys import argv
 
-search_result = input("Enter Bing Search Result:")
+script, search_result = argv
 
-decoded_search_result = urllib.parse.unquote(search_result)
+try:
+    decoded_search_result = urllib.parse.unquote(search_result)
+except:
+    decoded_search_result = search_result
+
 
 def decode_destination_url(decoded_search_result):
     start_index = decoded_search_result.find("u=a1") + 4
