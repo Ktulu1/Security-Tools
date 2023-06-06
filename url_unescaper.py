@@ -1,4 +1,4 @@
-# url unescaper
+# url unescaper for URL encoding
 # command line argument is filename
 
 import urllib.parse

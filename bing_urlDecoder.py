@@ -1,8 +1,6 @@
 import urllib.parse
 import base64
 
-#search_result = "https%3A%2F%2Fwww.bing.com%2Fck%2Fa%3F!%26%26p%3D962b413ab5cdc4a0JmltdHM9MTY4NjAwOTYwMCZpZ3VpZD0xZWI0ODRlYS04YjRlLTZlOGQtMjRiNi05N2MyOGE4NTZmZDUmaW5zaWQ9NTE2MQ%26ptn%3D3%26hsh%3D3%26fclid%3D1eb484ea-8b4e-6e8d-24b6-97c28a856fd5%26u%3Da1aHR0cHM6Ly93d3cuZWNvZ2VzdGlvbmFyLmNvbS5hci8%23bHVraWV3c2tpQHRyYW5zZ2xvYmFsY28uY29t"
-
 search_result = input("Enter Bing Search Result:")
 
 decoded_search_result = urllib.parse.unquote(search_result)
